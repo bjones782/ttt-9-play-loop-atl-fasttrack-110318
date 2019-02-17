@@ -45,3 +45,8 @@ def turn_count(board)
   end
   return turn
 end
+
+def play(board)
+  until over?(board) == true
+    turn(board)
+  end
